@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>github</title>
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+<body>
+		<div class="mt-5 row justify-content-md-center text-center">
+			
+				<h2 >GitHub API</h2>
+				<div class="input-group col-12">
+				  <form class="form-control" method="get">
+				    <input class="search__input col-12" class="from-control" type="text" name="username">
+			
+				    	<button class="btn btn-outline-secondary " type="submit">search on github</button>
+				    
+				  </form>
+				</div>
+			</div>
+	
+
+	<div class="mt-4 media container" id="open">
+
+		  <img class="mr-3 rounded float-left" src="{{ user.avatar_url }}" alt="Generic placeholder image">
+		  <div class="media-body ">
+		    <h5 class="mt-0">Name:{{ user.name }}</h5>
+
+		    	<p>
+		    		<a href="{{ user.html_url }}">Profile url</a>
+							<br>
+							<strong>Blog address:{{ user.blog }}</strong>
+							<br>
+							<strong>Location:{{ user.location }}</strong>
+							<br>
+							<strong>Twitter:{{ user.twitter_username }}</strong>
+							<br>
+							<p>
+								Repos:{{ user.public_repos }}
+								<br>
+								Gits:{{ user.public_gists }}
+								<br>
+								Followers:{{ user.followers }}
+								<br>
+								Following:{{ user.following }}
+								<br>
+								
+								Open:{{ user.created_at }}
+								<br>
+								Update:{{ user.updated_at }}
+		    		
+		    	</p>
+		  </div>
+		</div>
+		
+	</div>
+
+
+
+		<!--
+				<h2>GitHub API</h2>
+				  <form method="get">
+				    <input class="search__input" class="from-control" type="text" name="username">
+				    <button type="submit">search on github</button>
+				  </form>
+				
+		
+				
+				<div class="app">
+					<img src="{{ user.avatar_url }}" alt="profile image">
+						<main>
+							<strong>Name:{{ user.name }}</strong> 
+							<br>
+							<a href="{{ user.html_url }}">Profile url</a>
+							<br>
+							<strong>Blog address:{{ user.blog }}</strong>
+							<strong>Location:{{ user.location }}</strong>
+							<br>
+							<strong>Twitter{{ user.twitter_username }}</strong>
+							<br>
+							<p>
+								Repos:{{ user.public_repos }}
+								<br>
+								Gits:{{ user.public_gists }}
+								<br>
+								Followers:{{ user.followers }}
+								<br>
+								Following:{{ user.following }}
+								<br>
+								
+								Open:{{ user.created_at }}
+								<br>
+								Update:{{ user.updated_at }}
+							</p>
+						</main>
+				</div>
+
+		-->
+
+
+		
+	
+
+</body>
+</html>
